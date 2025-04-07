@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* cabeçalho superior */
+/* vw é para o width (baseado na largura), e o vh para o height (baseado na altura) */
+.header h1{
+    background-color: rgba(204, 3, 3, 0.60);
+    padding: 3%;
+    box-shadow: 2px 2px 4px;
+    height: 50px;
+    width: 100vw;
+    font-size: 175%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title{
+    font-weight: bold;
+    color: black;
+    font-family: "Roboto", sans-serif;
+}
+
+#header__title--color{
+    color: rgb(1, 110, 34);
+}
