@@ -1,18 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Jockey+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* CORES DO SITE */
 :root{
-    --corBase: rgb(204, 67, 67);
-    --corSegundaria: rgb(24, 136, 58);
-    --form: rgba(248, 88, 88, 0.61);
-    --botao1: rgb(230, 60, 60);
-    --botao1hover: rgb(165, 42, 42);
+    --corBase: #F6ECD1;
+    --corSegundaria: #FC9A1B;
+    --form: rgb(246, 236, 209, 0.9);
+    --botao1: #FC9A1B;
+    --botao1hover: #ffc06d;
     --botao2: rgb(0, 138, 41);
-    --botao2hover: rgb(0, 94, 28);
-}
-
-body{
-    background-color: var(--corSegundaria);
+    --botao2hover: rgb(90, 177, 116);
 }
 
 /* cabeçalho superior */
@@ -27,16 +24,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 
 .header__title{
     font-weight: bold;
     color: black;
-    font-family: "Roboto", sans-serif;
+    font-family: "Italiana";
+}
+
+.header__img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
 }
 
 #header__title--color{
     color: var(--corSegundaria);
+    font-family: "Jockey"
 }
 
 /* MAIN */
@@ -85,10 +90,12 @@ main{
 
 .form__btn:hover{
     background-color: var(--botao1hover);
+    color: black;
 }
 
 .form__btn--action:hover{
     background-color: var(--botao2hover);
+    color: black;
 }
 
 .form__btn--action{
