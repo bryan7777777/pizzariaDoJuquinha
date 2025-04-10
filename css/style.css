@@ -1,13 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* CORES DO SITE */
+:root{
+    --corBase: rgb(204, 67, 67);
+    --corSegundaria: rgb(24, 136, 58);
+    --form: rgba(248, 88, 88, 0.61);
+    --botao1: rgb(230, 60, 60);
+    --botao1hover: rgb(165, 42, 42);
+    --botao2: rgb(0, 138, 41);
+    --botao2hover: rgb(0, 94, 28);
+}
+
 body{
-    background-color: rgb(24, 136, 58);
+    background-color: var(--corSegundaria);
 }
 
 /* cabeçalho superior */
 /* vw é para o width (baseado na largura), e o vh para o height (baseado na altura) */
 .header{
-    background-color: rgb(204, 67, 67);
+    background-color: var(--corBase);
     padding: 3%;
     box-shadow: 2px 2px 4px;
     height: 15vh;
@@ -25,7 +36,7 @@ body{
 }
 
 #header__title--color{
-    color: rgb(1, 110, 34);
+    color: var(--corSegundaria);
 }
 
 /* MAIN */
@@ -49,7 +60,7 @@ main{
     flex-direction: column;
     width: 40%;
     height: 40%;
-    background-color: rgba(248, 88, 88, 0.61);
+    background-color: var(--form);
     justify-content: center;
     align-items: center;
     gap: 10%;
@@ -66,29 +77,29 @@ main{
 .form__btn{
     border-radius: 10px;
     padding: 16px 32px;
-    background-color: rgb(230, 60, 60);
+    background-color:var(--botao1);
     color: white;
     border: none;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .form__btn:hover{
-    background-color: brown;
+    background-color: var(--botao1hover);
 }
 
 .form__btn--action:hover{
-    background-color: rgb(0, 94, 28);
+    background-color: var(--botao2hover);
 }
 
 .form__btn--action{
-    background-color: rgb(0, 138, 41);
+    background-color:var(--botao2);
 }
 
 /* footer */
 .footer{
     height: 15vh;
     width: 100vw;
-    background-color: rgb(204, 67, 67);
+    background-color: var(--corBase);
     padding: 3%;
     display: flex;
     justify-content: center;
@@ -102,6 +113,7 @@ main{
     width: 16%;
     text-align: center;
     gap: 8px;
+    line-height: 20px;
 }
 
 .fa-brands{
